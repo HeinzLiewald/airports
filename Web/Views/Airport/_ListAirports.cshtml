@@ -1,0 +1,22 @@
+﻿@model List<Service.Models.Airport>
+
+    <table>
+        <thead>
+            <tr>
+                <th>IATA</th>
+                <th>Name</th>
+                <th>ISO</th>
+                <th>Size</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var airport in Model) {
+                <tr class="airport-row" data-iso="@airport.Iso">
+                    <td>@airport.Iata</td>
+                    <td>@airport.Name</td>
+                    <td>@airport.Iso</td>
+                    <td>@airport.Size</td>
+                </tr>
+            }
+        </tbody>
+    </table>

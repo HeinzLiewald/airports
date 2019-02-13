@@ -1,0 +1,25 @@
+﻿@model  Web.ViewModels.AirportViewModel
+
+@{
+    ViewBag.Title = "Airports List";
+}
+
+<h3>Filter</h3>
+
+<div id="filter-airport"></div>
+
+<hr />
+
+<h3>Airports List</h3>
+
+<div id="list-airports"></div>
+
+<input type="hidden" id="from-feed" />
+
+@{ Html.RenderPartial("_HeartcodeCanvasloaderContainer"); }
+
+@section scripts {
+    @Html.IncludeVersionedJs("Static/js/ajaxDispatcher.js")
+
+    @Html.IncludeVersionedJs("JsViews/Airport.js")
+}

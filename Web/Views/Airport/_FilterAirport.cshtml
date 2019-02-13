@@ -1,0 +1,7 @@
+﻿@model List<string>
+
+<span>Country:</span>
+@Html.DropDownList("countryDropDownList",
+                    new SelectList(Model),
+                    "Select country",
+                    new { @onchange = "filterList(this)" })

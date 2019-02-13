@@ -1,0 +1,20 @@
+﻿<style type="text/css">
+    #heartcode-canvasloader-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 20;
+    }
+</style>
+
+@Html.IncludeVersionedJs("Static/js/heartcode-canvasloader.js")
+
+<div id="heartcode-canvasloader-container"></div>
+
+@*
+    ***********How to use:***********
+    var cl = new CanvasLoader('heartcode-canvasloader-container');
+    cl.show();
+    cl.hide();
+    **************************
+*@
